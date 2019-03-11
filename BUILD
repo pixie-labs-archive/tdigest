@@ -3,13 +3,13 @@ package(default_visibility = ["//visibility:public"])
 cc_test(
     name = "tdigest_test",
     srcs = [
-        "TDigestTest.cpp",
+        "tdigest_test.cpp",
     ],
     size = "small",
     deps = [
         ":tdigest",
-        "//external:gtest",
-        "//external:glog",
+        "@com_google_googletest//:gtest",
+        "@com_github_google_glog//:glog",
     ],
     copts = [
         "-std=c++11",
@@ -21,14 +21,7 @@ cc_library(
     srcs = [
     ],
     hdrs = [
-        "TDigest.h",
-    ],
-    deps = [
-        "//external:glog",
-        "//external:gtest",
-    ],
-    copts = [
-        "-std=c++11",
+        "tdigest.h",
     ],
 )
 
