@@ -1,3 +1,4 @@
+licenses(["notice"])
 package(default_visibility = ["//visibility:public"])
 
 cc_test(
@@ -12,7 +13,7 @@ cc_test(
         "@com_github_google_glog//:glog",
     ],
     copts = [
-        "-std=c++11",
+        "-std=c++17",
     ],
 )
 
@@ -22,6 +23,9 @@ cc_library(
     ],
     hdrs = [
         "tdigest.h",
+    ],
+    copts = [
+        "-std=c++17",
     ],
 )
 

@@ -15,10 +15,11 @@
  * limitations under the License.
  */
 
+#include <random>
 
 #include "glog/logging.h"
 #include "gtest/gtest.h"
-#include "tdigest2/TDigest.h"
+#include "tdigest.h"
 
 namespace stesting {
 
