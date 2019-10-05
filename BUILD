@@ -2,6 +2,8 @@ licenses(["notice"])
 
 package(default_visibility = ["//visibility:public"])
 
+exports_files(["LICENSE"])
+
 cc_test(
     name = "tdigest_test",
     size = "small",
